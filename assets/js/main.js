@@ -27,4 +27,3 @@ angular.resumeBootstrap([app.name]);
 });
 }
 );
-

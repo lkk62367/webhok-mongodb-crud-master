@@ -6,17 +6,24 @@ Visit <a href="techbrij.com">techbrij.com</a> for step by step tutorial.
  
 	<!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" ng-click="addItem()">Add</button>
-     <div class="row h3">
- 		  <div class="col-md-3">Name</div>
-          <div class="col-md-3">Email</div>
-          <div class="col-md-3">Phone</div>
-          <div class="col-md-3"></div>
+     <div class="row h5">
+ 		  <div class="col-md-2">repsitoryName</div>
+          <div class="col-md-2">repositoryID</div>
+          <div class="col-md-2">pusherName</div>
+          <div class="col-md-2">beforeID</div>
+          <div class="col-md-2">afterID</div>
+          <div class="col-md-2">dateTime</div>
      </div>
 
         <div class="row" ng-repeat="item in items">
-          <div class="col-md-3" ng-bind="item.name"></div>
-          <div class="col-md-3" ng-bind="item.email"></div>
-          <div class="col-md-3" ng-bind="item.phone"></div>
+          <div class="col-md-2" ng-bind="item.repsitoryName"></div>
+          <div class="col-md-2" ng-bind="item.repositoryID"></div>
+          <div class="col-md-2" ng-bind="item.pusherName"></div>
+          <div class="col-md-2" ng-bind="item.beforeID"></div>
+          <div class="col-md-2" ng-bind="item.afterID"></div>
+          <div class="col-md-2" ng-bind="item.dateTime"></div>
+
+
           <div class="col-md-3">  
            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal" ng-click="editItem(item)">Edit</button>
            <button class="btn" ng-click="removeItem(item)">Remove</button></div>

@@ -1,28 +1,39 @@
 /**
- * Employee.js
- *
- * @description :: TODO: You might write a short summary of how this model works and what it represents here.
- * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
- */
+* Employee.js
+*
+* @description :: TODO: You might write a short summary of how this model works and what it represents here.
+* @docs        :: http://sailsjs.org/#!documentation/models
+*/
 
 module.exports = {
 
   attributes: {
-    name: {
+
+    repositoryName: {
       type: "string",
       required: true,
-      minLength: 2
     },
-    email: {
-      type: "email",
+    repositoryID: {
+      type: "string",
       required: "true",
       unique: true
     },
-    phone: {
+    pusherName: {
+      type: "string",
+      required: true
+    },
+    beforeID: {
+      type: "string",
+      required: true
+    },
+    afterID: {
+      type: "string",
+      required: true
+    },
+    dateTime: {
       type: "string",
       required: true
     }
-
   }
 };
 
